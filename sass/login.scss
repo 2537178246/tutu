@@ -1,0 +1,443 @@
+@import "reset.css";
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+$font1:#ff6a00;
+.flex{
+    display: flex;
+}
+//头部导航 str
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f3f5f7;
+    color: #71797f;
+    .w {
+        display: flex;
+        justify-content: space-between;
+        .top-nav-l {
+            display: flex;
+            justify-content: flex-start;
+            li{
+                padding: 0 16px;
+                font-size: 12px;
+                &:first-child{
+                    padding: 0px 16px 0 0;
+                }
+                &:nth-child(2){
+                    position: relative;
+                    &:hover>.weichat-box{
+                        display: block;
+                    }
+                    .weichat-box{
+                        width: 160px;
+                        padding: 12px;
+                        position: absolute;
+                        top: 100%;
+                        left: -1px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #232628;
+                        background-color: #fff;
+                        border: 1px solid #E9ECF0;
+                        text-align: center;
+                        z-index: 1000;
+                        display: none;
+                        img{
+                            width: 120px;
+                        }
+                    }
+                    
+                }
+                &:nth-child(3){
+                    position: relative;
+                    &:hover>.huaApp-box{
+                        display: block;
+                    }
+                    .huaApp-box{
+                        width: 160px;
+                        padding: 12px;
+                        position: absolute;
+                        top: 100%;
+                        left: -1px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #232628;
+                        background-color: #fff;
+                        border: 1px solid #E9ECF0;
+                        text-align: center;
+                        z-index: 1000;
+                        display: none;
+                        img{
+                            width: 120px;
+                        }
+                    }
+                }
+                &:hover{
+                    color: $font1;
+                }
+                .icon-shoucang {
+                    color: $font1;
+                }
+                .icon-weix {
+                    color: $font1;
+                }
+                
+                .icon-hua {
+                    color: $font1;
+                }
+            }
+        }
+        .top-nav-r {
+            display: flex;
+            justify-content: flex-end;
+            li{
+                padding: 0 16px;
+                font-size: 12px;
+                &:last-child{
+                    padding: 0 0 0 16px;
+                }
+                &:hover{
+                    color:$font1;
+                }              
+                &:first-child{
+                    padding: 0;
+                }
+                
+            }
+            .menu{
+                position: relative;
+                .icon-arrow-down-copy {
+                    color: #71797f;
+                    font-size: 6px;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: $font1;
+                    .menu-dropdown{
+                        display: block;
+                        a:hover{
+                            color: $font1;
+                        }
+                    }
+                }
+                .menu-dropdown{
+                    position: absolute;
+                    top: 100%;
+                    left: -1px;
+                    font-size: 12px;
+                    line-height: 25px;
+                    color: #71797f;
+                    /* color: #232628; */
+                    background: #fff;
+                    border: 1px solid #E9ECF0;
+                    border-top-color: transparent;
+                    text-align: center;
+                    z-index: 1000;
+                    display: none;
+                    a{
+                        display: inline-block;
+                    }
+                }
+            }
+            span{
+                color: $font1;
+            }
+        }
+        
+    }
+}
+//头部导航 end
+//搜索 str
+.header{
+    height: 120px;
+    background-color: #f7f9fa;
+    .w{
+        justify-content: space-between;
+        .logo-l{
+            img{
+                width: 238px;
+                height: 60px;
+                margin: 30px 0 0 ;
+                background-color: transparent;
+            }
+        }
+        .search-box{
+            width: 440px;
+            // height: 97px;
+            height: 50px;
+            border: 2px solid $font1;
+            margin: 25px 0 0;
+            border-radius: 50px;
+            position: relative;
+            .icon-sw_sousuo{
+                position: absolute;
+                left: 25px;
+                top: 16px;
+                color: #71797f;
+            }
+            .search-box-input{
+                position: absolute;
+                left: 66px;
+                .search-input{
+
+                    width: 260px;
+                    height: 44px;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+            .search-box-button{
+                position: absolute;
+                right: 0px;
+                // top: 1px;
+                width: 118px;
+                height: 48px;
+                background-color: $font1;
+                border-radius: 25px;
+                border: 1px solid $font1;
+                .search-button{
+                    width: 100%;
+                    height: 100%;
+                    
+                    border: none;
+                    background-color: transparent;
+                    outline: none;  
+                    padding: 6px 12px;
+                    font-size: 18px;
+                    color: #fff; 
+                    font-weight: 600;   
+                }
+            }
+            
+        }
+        .header-r{
+            ul{
+                display: flex;
+                padding: 25px 0 0 ;
+                li{
+                    text-align: center;
+                    line-height: 40px;
+                    color: #71797f;
+                    font-size: 14px;
+                    .icon-dianhua,.icon-kefu{
+                        color: $font1;
+                        margin: 12px 8px 0 0;
+                        font-size: 24px;
+                    }
+                    &:last-child{
+                        margin-left: 40px;
+                        &:hover{
+                            color: $font1;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+//搜索 end
+// 登录 str
+.tips {
+    display: block;
+    padding-left: 40px;
+    height: 18px;
+    margin: 4px 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: $font1;
+}
+.login-wrapper{
+    background: url(../img/login_bg.jpg) no-repeat;
+    .w>.login-box{
+        position: relative;
+        width: 360px;
+        height: 438px;
+        border-radius: 8px;
+        background-color: #fff;
+        margin: 18px 0 ;
+        overflow: hidden;
+        text-align: center;
+        .login-title{
+            color: $font1;
+            line-height: 56px;
+            font-size: 18px;
+        }
+        .login-form{
+            padding: 20px 24px 0;
+            .search-box-button{
+                // position: absolute;
+                // right: 0px;
+                // top: 1px;
+                margin: 10px auto 0;
+                width: 100%;
+                height: 33px;
+                background-color: $font1;
+                border-radius: 25px;
+                border: 1px solid $font1;
+                .search-button{
+                    width: 100%;
+                    height: 100%;
+                    
+                    border: none;
+                    background-color: transparent;
+                    outline: none;  
+                    padding: 6px 12px;
+                    font-size: 18px;
+                    color: #fff; 
+                    font-weight: 600;   
+                }
+            }
+            .login-phone{
+                width: 100%;
+                height: 36px;
+                border: 1px solid #E9ECF0;
+                border-radius: 2px;
+                .icon-shoujiAPP{
+                    width: 34px;
+                    font-size: 22px;
+                    color: #737373;
+                    line-height: 36px;
+                    float: left;
+                    margin: 0 8px;
+                }
+                input{
+                    border: none;
+                    background-color: transparent;
+                    // padding: 7px 6px;
+                    float: left;
+                    width: 240px;
+                    height: 34px;
+                }
+            }
+            .login-pwd{
+                width: 100%;
+                height: 36px;
+                border: 1px solid #E9ECF0;
+                border-radius: 2px;
+                .icon-mima{
+                    width: 34px;
+                    font-size: 22px;
+                    color: #737373;
+                    line-height: 36px;
+                    float: left;
+                    margin: 0 8px;
+                }
+                input{
+                    border: none;
+                    background-color: transparent;
+                    // padding: 7px 6px;
+                    float: left;
+                    width: 240px;
+                    height: 34px;
+                }
+            }
+            .login-email{
+                width: 100%;
+                height: 36px;
+                border: 1px solid #E9ECF0;
+                border-radius: 2px;
+                .icon-youxiang{
+                    width: 34px;
+                    font-size: 22px;
+                    color: #737373;
+                    line-height: 36px;
+                    float: left;
+                    margin: 0 8px;
+                }
+                input{
+                    border: none;
+                    background-color: transparent;
+                    // padding: 7px 6px;
+                    float: left;
+                    width: 240px;
+                    height: 34px;
+                }
+            }
+            .login-user{
+                width: 100%;
+                height: 36px;
+                border: 1px solid #E9ECF0;
+                border-radius: 2px;
+                .icon-hua{
+                    width: 34px;
+                    font-size: 22px;
+                    color: #737373;
+                    line-height: 36px;
+                    float: left;
+                    margin: 0 8px;
+                }
+                input{
+                    border: none;
+                    background-color: transparent;
+                    // padding: 7px 6px;
+                    float: left;
+                    width: 240px;
+                    height: 34px;
+                }
+            }
+            .form-tips{
+                color: #71797f;
+                font-size: 14px;
+                margin-top: 12px;
+            }
+        }
+        .login-button{
+            // padding: 0 8px;
+            background: #E9ECF0;
+            width: 100%;
+            height: 52px;
+            position: absolute;
+            bottom: 0;
+            a{
+                line-height: 52px;
+                color: $font1;
+                font-size: 14px;
+                .icon-you{
+                    font-size: 14px;
+                    color: $font1;
+                }
+            }
+        }
+    }
+}
+// 登录 end
+// 底部 str
+footer{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #737373;
+        margin: 30px 0;
+    }
+    .auth{
+        display: flex;
+        justify-content: center;
+        height: 53px;
+        margin: 20px 0 30px;
+        .auth-img>img{
+            margin: 0 3px;
+            height: 100%;
+        }
+    }
+    .button-text{
+        font-size: 12px;
+        color: #737373;
+        text-align: center;
+        a:hover{
+            color: $font1;
+        }
+    }
+}
+// 底部 end
+
+//注册 str
+
+//注册 end

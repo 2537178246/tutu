@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2350614_yrddxemu78r.css">
+    <link rel="stylesheet" href="../css/shoppingCar.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/request.js"></script>
+</head>
+
+<body>
+    <!--头部导航 str-->
+    <div class="top-nav">
+        <div class="w">
+            <ul class="top-nav-l">
+                <li>
+                    <span class="iconfont icon-shoucang"></span>
+                    <a href="">收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <span class="iconfont icon-weix"></span>
+                    <a href="">关注微信</a>
+                    <div class="weichat-box">
+                        <img src="../img/wxguanjia_qrcode.png" alt="">
+                        <p>扫码关注<br>回复"礼物"更多惊喜!</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="iconfont icon-hua"></span>
+                    <a href="">花礼网app</a>
+                    <div class="huaApp-box">
+                        <img src="../img/app_download_qrcode_2021.png" alt="">
+                        <p>新人专享100元app红包</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="top-nav-r">
+                <li class="top-login">
+                    <a href="./login.html">你好，请登录</a>
+                </li>
+                <li class="top-register">
+                    <a href="./register.html">注册</a>
+
+                </li>
+                <li>
+                    <a href="">
+                        订单查询
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="">
+                        客户服务
+                        <span class="iconfont icon-arrow-down-copy"></span>
+                        <div class="menu-dropdown">
+                            <a href="">在线付款</a>
+                            <a href="">帮助中心</a>
+                            <a href="">售后服务</a>
+                            <a href="">配送范围</a>
+                            <a href="">留言反馈</a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        购物车
+                        <span class="carNum">(0)</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="">中国鲜花礼品网:中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--头部导航 end-->
+    <!--搜索 str-->
+    <div class="header">
+        <div class="w flex">
+            <div class="logo-l">
+                <h1>
+                    <a href="./index.html"><img src="../img/common_sprite_36.jpg" alt=""></a>
+                </h1>
+            </div>
+            <div class="search-box">
+                <div class="iconfont icon-sw_sousuo"></div>
+                <div class="search-box-input">
+                    <input type="text" class="search-input" placeholder="商品搜索">
+                </div>
+                <div class="search-box-button">
+                    <button class="search-button">搜索</button>
+                </div>
+            </div>
+            <div class="header-r">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-dianhua"></i>
+                        <span>400-889-8188</span>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont icon-kefu"></i>
+                            <span>在线客服</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--搜索 end-->
+    <!-- 订单 str -->
+    <div class="container">
+        <div class="cart-panel">
+            <div class="hd">
+                <ul>
+                    <li>商品名称</li>
+                    <li>市场价</li>
+                    <li>订购价</li>
+                    <li>数量</li>
+                    <li>操作</li>
+                </ul>
+            </div>
+            <div class="bd">
+                <!-- <ul>
+                    <li>
+                        <input type="checkbox" name="check" id="" checked='checked' class="check">
+                    </li>
+                    <li>
+                        <img src="../img/202006021701430867.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>[鲜花]一往情深一精品玫瑰礼盒:19枝红玫瑰，勿忘我0.1扎</span>
+                        </a>
+                    </li>
+                    <li>
+                        ￥358
+                    </li>
+                    <li class="five">
+                        ￥<span class="price">248</span>
+                    </li>
+                    <li class="six">
+                        <div class="input-num">
+                            <span class="prev">-</span>
+                            <input type="text" class="input-sm" value="1" maxlength="3" name="cps1">
+                            <span class="add">+</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">删除</a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="cart-banner">
+            <div class="cart-info">
+                <a href="./index.html">继续挑选</a>
+                <div class="cart-price">
+                    <p>应付金额: <span>￥<span class="priceAll">248</span> </span></p>
+                </div>
+            </div>
+            <div class="cart-button">
+                <button>去结算</button>
+            </div>
+        </div>
+    </div>
+    <!-- 订单 end -->
+    <!-- 底部 str -->
+    <footer class="w">
+        <ul>
+            <li><a href="">首页</a></li>
+            <b>|</b>
+            <li><a href="">关于我们</a></li>
+            <b>|</b>
+            <li><a href="">媒体报道</a></li>
+            <b>|</b>
+            <li><a href="">联系方式</a></li>
+            <b>|</b>
+            <li><a href="">企业团购</a></li>
+            <b>|</b>
+            <li><a href="">花店入驻</a></li>
+            <b>|</b>
+            <li><a href="">友情链接</a></li>
+            <b>|</b>
+            <li><a href="">在线补款</a></li>
+            <b>|</b>
+            <li><a href="">为什么选择中国鲜花礼品网</a></li>
+        </ul>
+        <div class="auth">
+            <div class="auth-img">
+                <img src="../img/slogan.png" alt="">
+                <img src="../img/100.jpg" alt="">
+                <img src="../img/bico1.jpg" alt="">
+                <img src="../img/govIcon.gif" alt="">
+            </div>
+        </div>
+        <div class="button-text">
+            <p><a href="">中国花卉协会会员</a> <a href="">中国电子商务协会会员</a>
+                ICP经营许可证: <a href="">粤B2-20050744</a> | <a href="">粤ICP备09171662号</a> 粤公网安备44030502000373号Copyight
+                &copy;
+                2005-2021</p>
+            <p><a href="">www.hua.com</a> 深圳市百易信息技术有限公司</p>
+        </div>
+    </footer>
+    <!-- 底部 end -->
+</body>
+<script>
+    var lgc = getCookie("lgc");
+    if (lgc) {
+        $(".top-login a").removeAttr("href").text("你好，" + lgc).attr("href", "javascript:;");
+        $(".top-register a").removeAttr("href").text("退出").attr("href", " ");
+        // 购物车数据
+        sCarGoods(lgc);
+
+    } else {
+        $(".priceAll").text("0.00");
+    }
+    // 退出
+    $(".top-register a").click(function () {
+        console.log(111);
+        $(".top-login a").removeAttr("href").text("你好，请登录").attr("href", "./login.html");
+        $(".top-register a").removeAttr("href").text("注册").attr("href", "./register.html");
+        delCookie("lgc");
+        window.reload();
+    })
+
+
+
+
+
+    $(function () {
+
+        //图标手势
+        var num = $(".input-num input").val() * 1;
+        if (num <= 1) {
+            $(".prev").css("cursor", "no-drop");
+            $(".add").css("cursor", "pointer");
+        } else {
+            $(".prev").css("cursor", "pointer");
+        }
+
+        // 加载刷新总价
+        // $(".priceAll").text(($(".input-num input").val() * $(".price").text()).toFixed(2));
+
+        if (lgc) {
+            // 购物车渲染
+            selectShoppingCar({ user: lgc }).then(data => {
+                var { list } = data;
+                if (list.length > 0) {
+                    var html = "";
+                    list.forEach(({ 0: goodsImg, 1: goodsPrice, 2: goodsName, goodsNum, goodsId }) => {
+                        html += ` <ul class="${goodsId}">
+                    <li>
+                        <input type="checkbox" name="check" id="" checked='checked' class="check">
+                    </li>
+                    <li>
+                        <img src="${goodsImg}" alt="">
+                    </li>
+                    <li>
+                        <a href="">
+                            <span>${goodsName}</span>
+                        </a>
+                    </li>
+                    <li>
+                        ￥${goodsPrice * 1.5}
+                    </li>
+                    <li class="five">
+                        ￥<span class="price">${goodsPrice}</span>
+                    </li>
+                    <li class="six">
+                        <div class="input-num">
+                            <span class="prev">-</span>
+                            <input type="text" class="input-sm" value="${goodsNum}" maxlength="3" name="cps1">
+                            <span class="add">+</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="delGoods">删除</a>
+                    </li>
+                </ul>`;
+                    })
+                    $(".bd").html(html);
+                    getCheck();
+                    add();
+                    reduce();
+                } else {
+                    $(".bd").html("购物车暂无东西，快去购买吧");
+                    // location.reload();
+                }
+                // 删除
+                delGood();
+            })
+        }
+
+
+        // checked点击判断
+        $(".bd").on("click", ".check", function () {
+            getCheck();
+            let status = $(this).prop("checked");
+            // if (status) {
+            //     add();
+            //     reduce();
+            // }
+            console.log(111);
+        })
+        // checked选中判断
+        function getCheck() {
+            var total = 0;
+
+            $(".check").each(function () {
+                var status = $(this).prop("checked");
+                if (status) {
+                    // total += total;
+                    let prc = $(this).parent().siblings(".five").children(".price").text();
+                    let num = $(this).parent().siblings(".six").children(".input-num").children(".input-sm").val();
+                    let prcAll = (prc * num).toFixed(2);
+                    total += prcAll * 1;
+
+                    // inputBlur();
+                }
+            })
+
+            // console.log(total);
+            $(".priceAll").text(total);
+        }
+        // 增加事件
+        function add() {
+            $(".bd").on("click", ".add", function () {
+                let prevNum = $(this).siblings(".input-sm").val() * 1;
+                if (prevNum < 999) {
+                    prevNum = prevNum + 1;
+                    $(this).siblings(".input-sm").val(prevNum);
+                    $(this).siblings(".prev").css("cursor", "pointer");
+                } else {
+                    prevNum = 999;
+                    $(this).siblings(".input-sm").val(prevNum);
+                }
+                getCheck();
+            })
+
+        }
+        // 减少事件
+        function reduce() {
+            $(".bd").on("click", ".prev", function () {
+                let prevNum = $(this).siblings(".input-sm").val() * 1;
+                if (prevNum > 1) {
+                    prevNum = prevNum - 1;
+                    $(this).siblings(".input-sm").val(prevNum);
+                } else {
+                    $(this).siblings(".prev").css("cursor", "no-drop");
+                    prevNum = 1;
+                    $(this).siblings(".input-sm").val(prevNum);
+                }
+
+                getCheck();
+            })
+        }
+        // 输入框失焦判断
+        function inputBlur() {
+            $(".bd").on("blur", "input", function () {
+                let num = $(this).val() * 1;
+                if (num < 1) {
+                    $(this).val("1");
+                } else if (num > 999) {
+                    $(this).val("999");
+                } else {
+                    $(".prev").css("cursor", "pointer");
+                    $(".priceAll").text((num * $(".price").text()).toFixed(2));
+                }
+            })
+        }
+        // 删除事件
+        function delGood() {
+            $(".bd").on("click", ".delGoods", function () {
+                // console.log(111);
+                var goodsId = $(this).parent().parent().attr("class");
+
+                if (confirm("是否删除该商品")) {
+
+                    delGoods({ user: lgc, goodsId: goodsId }).then(data => {
+                        var { status, msg } = data;
+                        if (status) {
+                            $(this).parent().parent().remove();
+                            sCarGoods(lgc);
+                            getCheck();
+                            location.reload();
+                        } else {
+                            alert(msg);
+                        }
+                    })
+                }
+
+            })
+        }
+
+    })
+
+    // 购物车数据
+    function sCarGoods(lgc) {
+        if (lgc) {
+            selectGoods({ user: lgc }).then(({ row }) => {
+                $(".carNum").text(row);
+            })
+        }
+    }
+</script>
+
+</html>

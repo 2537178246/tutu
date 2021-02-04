@@ -1,0 +1,337 @@
+@import url(reset.css);
+.w {
+  width: 1200px;
+  margin: 0 auto; }
+
+.flex {
+  display: flex; }
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f3f5f7;
+  color: #71797f; }
+  .top-nav .w {
+    display: flex;
+    justify-content: space-between; }
+    .top-nav .w .top-nav-l {
+      display: flex;
+      justify-content: flex-start; }
+      .top-nav .w .top-nav-l li {
+        padding: 0 16px;
+        font-size: 12px; }
+        .top-nav .w .top-nav-l li:first-child {
+          padding: 0px 16px 0 0; }
+        .top-nav .w .top-nav-l li:nth-child(2) {
+          position: relative; }
+          .top-nav .w .top-nav-l li:nth-child(2):hover > .weichat-box {
+            display: block; }
+          .top-nav .w .top-nav-l li:nth-child(2) .weichat-box {
+            width: 160px;
+            padding: 12px;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #232628;
+            background-color: #fff;
+            border: 1px solid #E9ECF0;
+            text-align: center;
+            z-index: 1000;
+            display: none; }
+            .top-nav .w .top-nav-l li:nth-child(2) .weichat-box img {
+              width: 120px; }
+        .top-nav .w .top-nav-l li:nth-child(3) {
+          position: relative; }
+          .top-nav .w .top-nav-l li:nth-child(3):hover > .huaApp-box {
+            display: block; }
+          .top-nav .w .top-nav-l li:nth-child(3) .huaApp-box {
+            width: 160px;
+            padding: 12px;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #232628;
+            background-color: #fff;
+            border: 1px solid #E9ECF0;
+            text-align: center;
+            z-index: 1000;
+            display: none; }
+            .top-nav .w .top-nav-l li:nth-child(3) .huaApp-box img {
+              width: 120px; }
+        .top-nav .w .top-nav-l li:hover {
+          color: #ff6a00; }
+        .top-nav .w .top-nav-l li .icon-shoucang {
+          color: #ff6a00; }
+        .top-nav .w .top-nav-l li .icon-weix {
+          color: #ff6a00; }
+        .top-nav .w .top-nav-l li .icon-hua {
+          color: #ff6a00; }
+    .top-nav .w .top-nav-r {
+      display: flex;
+      justify-content: flex-end; }
+      .top-nav .w .top-nav-r li {
+        padding: 0 16px;
+        font-size: 12px; }
+        .top-nav .w .top-nav-r li:last-child {
+          padding: 0 0 0 16px; }
+        .top-nav .w .top-nav-r li:hover {
+          color: #ff6a00; }
+        .top-nav .w .top-nav-r li:first-child {
+          padding: 0; }
+      .top-nav .w .top-nav-r .menu {
+        position: relative; }
+        .top-nav .w .top-nav-r .menu .icon-arrow-down-copy {
+          color: #71797f;
+          font-size: 6px; }
+        .top-nav .w .top-nav-r .menu:hover {
+          background-color: #fff;
+          color: #ff6a00; }
+          .top-nav .w .top-nav-r .menu:hover .menu-dropdown {
+            display: block; }
+            .top-nav .w .top-nav-r .menu:hover .menu-dropdown a:hover {
+              color: #ff6a00; }
+        .top-nav .w .top-nav-r .menu .menu-dropdown {
+          position: absolute;
+          top: 100%;
+          left: -1px;
+          font-size: 12px;
+          line-height: 25px;
+          color: #71797f;
+          /* color: #232628; */
+          background: #fff;
+          border: 1px solid #E9ECF0;
+          border-top-color: transparent;
+          text-align: center;
+          z-index: 1000;
+          display: none; }
+          .top-nav .w .top-nav-r .menu .menu-dropdown a {
+            display: inline-block; }
+      .top-nav .w .top-nav-r span {
+        color: #ff6a00; }
+
+.header {
+  height: 120px;
+  background-color: #f7f9fa; }
+  .header .w {
+    justify-content: space-between; }
+    .header .w .logo-l img {
+      width: 238px;
+      height: 60px;
+      margin: 30px 0 0;
+      background-color: transparent; }
+    .header .w .search-box {
+      width: 440px;
+      height: 50px;
+      border: 2px solid #ff6a00;
+      margin: 25px 0 0;
+      border-radius: 50px;
+      position: relative; }
+      .header .w .search-box .icon-sw_sousuo {
+        position: absolute;
+        left: 25px;
+        top: 16px;
+        color: #71797f; }
+      .header .w .search-box .search-box-input {
+        position: absolute;
+        left: 66px; }
+        .header .w .search-box .search-box-input .search-input {
+          width: 260px;
+          height: 44px;
+          border: none;
+          background-color: transparent; }
+      .header .w .search-box .search-box-button {
+        position: absolute;
+        right: 0px;
+        width: 118px;
+        height: 48px;
+        background-color: #ff6a00;
+        border-radius: 25px;
+        border: 1px solid #ff6a00; }
+        .header .w .search-box .search-box-button .search-button {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background-color: transparent;
+          outline: none;
+          padding: 6px 12px;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 600; }
+    .header .w .header-r ul {
+      display: flex;
+      padding: 25px 0 0; }
+      .header .w .header-r ul li {
+        text-align: center;
+        line-height: 40px;
+        color: #71797f;
+        font-size: 14px; }
+        .header .w .header-r ul li .icon-dianhua, .header .w .header-r ul li .icon-kefu {
+          color: #ff6a00;
+          margin: 12px 8px 0 0;
+          font-size: 24px; }
+        .header .w .header-r ul li:last-child {
+          margin-left: 40px; }
+          .header .w .header-r ul li:last-child:hover {
+            color: #ff6a00; }
+
+.tips {
+  display: block;
+  padding-left: 40px;
+  height: 18px;
+  margin: 4px 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ff6a00; }
+
+.login-wrapper {
+  background: url(../img/login_bg.jpg) no-repeat; }
+  .login-wrapper .w > .login-box {
+    position: relative;
+    width: 360px;
+    height: 438px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 18px 0;
+    overflow: hidden;
+    text-align: center; }
+    .login-wrapper .w > .login-box .login-title {
+      color: #ff6a00;
+      line-height: 56px;
+      font-size: 18px; }
+    .login-wrapper .w > .login-box .login-form {
+      padding: 20px 24px 0; }
+      .login-wrapper .w > .login-box .login-form .search-box-button {
+        margin: 10px auto 0;
+        width: 100%;
+        height: 33px;
+        background-color: #ff6a00;
+        border-radius: 25px;
+        border: 1px solid #ff6a00; }
+        .login-wrapper .w > .login-box .login-form .search-box-button .search-button {
+          width: 100%;
+          height: 100%;
+          border: none;
+          background-color: transparent;
+          outline: none;
+          padding: 6px 12px;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 600; }
+      .login-wrapper .w > .login-box .login-form .login-phone {
+        width: 100%;
+        height: 36px;
+        border: 1px solid #E9ECF0;
+        border-radius: 2px; }
+        .login-wrapper .w > .login-box .login-form .login-phone .icon-shoujiAPP {
+          width: 34px;
+          font-size: 22px;
+          color: #737373;
+          line-height: 36px;
+          float: left;
+          margin: 0 8px; }
+        .login-wrapper .w > .login-box .login-form .login-phone input {
+          border: none;
+          background-color: transparent;
+          float: left;
+          width: 240px;
+          height: 34px; }
+      .login-wrapper .w > .login-box .login-form .login-pwd {
+        width: 100%;
+        height: 36px;
+        border: 1px solid #E9ECF0;
+        border-radius: 2px; }
+        .login-wrapper .w > .login-box .login-form .login-pwd .icon-mima {
+          width: 34px;
+          font-size: 22px;
+          color: #737373;
+          line-height: 36px;
+          float: left;
+          margin: 0 8px; }
+        .login-wrapper .w > .login-box .login-form .login-pwd input {
+          border: none;
+          background-color: transparent;
+          float: left;
+          width: 240px;
+          height: 34px; }
+      .login-wrapper .w > .login-box .login-form .login-email {
+        width: 100%;
+        height: 36px;
+        border: 1px solid #E9ECF0;
+        border-radius: 2px; }
+        .login-wrapper .w > .login-box .login-form .login-email .icon-youxiang {
+          width: 34px;
+          font-size: 22px;
+          color: #737373;
+          line-height: 36px;
+          float: left;
+          margin: 0 8px; }
+        .login-wrapper .w > .login-box .login-form .login-email input {
+          border: none;
+          background-color: transparent;
+          float: left;
+          width: 240px;
+          height: 34px; }
+      .login-wrapper .w > .login-box .login-form .login-user {
+        width: 100%;
+        height: 36px;
+        border: 1px solid #E9ECF0;
+        border-radius: 2px; }
+        .login-wrapper .w > .login-box .login-form .login-user .icon-hua {
+          width: 34px;
+          font-size: 22px;
+          color: #737373;
+          line-height: 36px;
+          float: left;
+          margin: 0 8px; }
+        .login-wrapper .w > .login-box .login-form .login-user input {
+          border: none;
+          background-color: transparent;
+          float: left;
+          width: 240px;
+          height: 34px; }
+      .login-wrapper .w > .login-box .login-form .form-tips {
+        color: #71797f;
+        font-size: 14px;
+        margin-top: 12px; }
+    .login-wrapper .w > .login-box .login-button {
+      background: #E9ECF0;
+      width: 100%;
+      height: 52px;
+      position: absolute;
+      bottom: 0; }
+      .login-wrapper .w > .login-box .login-button a {
+        line-height: 52px;
+        color: #ff6a00;
+        font-size: 14px; }
+        .login-wrapper .w > .login-box .login-button a .icon-you {
+          font-size: 14px;
+          color: #ff6a00; }
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #737373;
+  margin: 30px 0; }
+footer .auth {
+  display: flex;
+  justify-content: center;
+  height: 53px;
+  margin: 20px 0 30px; }
+  footer .auth .auth-img > img {
+    margin: 0 3px;
+    height: 100%; }
+footer .button-text {
+  font-size: 12px;
+  color: #737373;
+  text-align: center; }
+  footer .button-text a:hover {
+    color: #ff6a00; }
+
+/*# sourceMappingURL=login.css.map */

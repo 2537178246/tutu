@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2350614_yrddxemu78r.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/request.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <img src="../img/21_logoupdate_banner_top.png" alt="">
+        </a>
+    </header>
+    <!--头部导航 str-->
+    <div class="top-nav">
+        <div class="w">
+            <ul class="top-nav-l">
+                <li>
+                    <span class="iconfont icon-shoucang"></span>
+                    <a href="javascript:;">收藏鲜花网(hua.com)</a>
+                </li>
+                <li>
+                    <span class="iconfont icon-weix"></span>
+                    <a href="javascript:;">关注微信</a>
+                    <div class="weichat-box">
+                        <img src="../img/wxguanjia_qrcode.png" alt="">
+                        <p>扫码关注<br>回复"礼物"更多惊喜!</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="iconfont icon-hua"></span>
+                    <a href="">花礼网app</a>
+                    <div class="huaApp-box">
+                        <img src="../img/app_download_qrcode_2021.png" alt="">
+                        <p>新人专享100元app红包</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="top-nav-r">
+                <li class="top-login">
+                    <a href="./login.html">你好，请登录</a>
+                </li>
+                <li class="top-register">
+                    <a href="./register.html">注册</a>
+
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        订单查询
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="javascript:;">
+                        客户服务
+                        <span class="iconfont icon-arrow-down-copy"></span>
+                        <div class="menu-dropdown">
+                            <a href="">在线付款</a>
+                            <a href="">帮助中心</a>
+                            <a href="">售后服务</a>
+                            <a href="">配送范围</a>
+                            <a href="">留言反馈</a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./shoppingCar.html">
+                        购物车
+                        <span class="carNum">(0)</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="javascript:;">中国鲜花礼品网:中国鲜花网领先品牌</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--头部导航 end-->
+    <!--搜索 str-->
+    <div class="header">
+        <div class="w flex">
+            <div class="logo-l">
+                <h1>
+                    <a href="javascript:;"><img src="../img/common_sprite_36.jpg" alt=""></a>
+                </h1>
+            </div>
+            <div class="search-box">
+                <div class="iconfont icon-sw_sousuo"></div>
+                <div class="search-box-input">
+                    <input type="text" class="search-input" placeholder="商品搜索">
+                </div>
+                <div class="search-box-button">
+                    <button class="search-button">搜索</button>
+                </div>
+            </div>
+            <div class="header-r">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-dianhua"></i>
+                        <span>400-889-8188</span>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont icon-kefu"></i>
+                            <span>在线客服</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--搜索 end-->
+    <!-- 所有分类 str -->
+    <div class="clear-fix">
+        <div class="w">
+            <h3 class="categorys-title">
+                <span class="iconfont icon-suoyou"></span>
+                <a href="">所有分类</a>
+            </h3>
+            <div class="dropdown-cate">
+                <ul>
+                    <li><a href="">鲜花</a></li>
+                    <li><a href="">永生花</a></li>
+                    <li><a href="">蛋糕</a></li>
+                    <li><a href="">礼品</a></li>
+                    <li><a href="">巧克力</a></li>
+                    <li><a href="">花语大全</a></li>
+                    <li><a href="">企业团购</a></li>
+                    <li><a href="">设计师臻选鲜花</a></li>
+                    <li><a href="">情人节鲜花礼物</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 所有分类 end -->
+    <!-- 大图轮播 str -->
+    <div class="carousel-fade">
+        <ul class="carousel-indicators">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-nav">
+                <div class="carousel-nav-item">
+                    <h4><a href="">鲜花用途</a></h4>
+                    <ul class="cate-list-inline cate-list">
+                        <li><a href="">爱情鲜花</a></li>
+                        <li><a href="">生日鲜花</a></li>
+                        <li><a href="">友情鲜花</a></li>
+                        <li><a href="">问候长辈</a></li>
+                        <li><a href="">探病慰问</a></li>
+                        <li><a href="">道歉鲜花</a></li>
+                        <li><a href="">祝贺鲜花</a></li>
+                        <li><a href="">婚庆鲜花</a></li>
+                        <li><a href="">商务鲜花</a></li>
+                    </ul>
+                </div>
+                <div class="carousel-nav-item">
+                    <h4><a href="javascript:;">鲜花花材</a></h4>
+                    <ul class="cate-list cate-list-inline">
+                        <li><a href="">玫瑰</a></li>
+                        <li><a href="">康乃馨</a></li>
+                        <li><a href="">百合</a></li>
+                        <li><a href="">向日葵</a></li>
+                        <li><a href="">扶郎</a></li>
+                        <li><a href="">郁金香</a></li>
+                        <li><a href="">马蹄莲</a></li>
+                    </ul>
+                </div>
+                <div class="carousel-nav-item cate-pope">
+                    <h4><a href="">永生花</a><span class="iconfont icon-you"></span></h4>
+                    <ul class="cate-list cate-list-inline">
+                        <li><a href="">永生瓶花</a></li>
+                        <li><a href="">经典花盒</a></li>
+                        <li><a href="">特色永生花</a></li>
+                    </ul>
+                    <div class="cate-open">
+                        111
+                    </div>
+                </div>
+                <div class="carousel-nav-item cate-pope ">
+                    <h4>
+                        <a href="">蛋糕</a>
+                        <span class="iconfont icon-you"></span>
+                    </h4>
+                    <ul class="cate-list cate-list-inline">
+                        <li><a href="">元祖</a></li>
+                        <li><a href="">幸福西饼</a></li>
+                        <li><a href="">21cake</a></li>
+                        <li><a href="">诺心蛋糕</a></li>
+                        <li><a href="">窝夫小子</a></li>
+                        <li><a href="">BONCAKE</a></li>
+                    </ul>
+                    <div class="cate-open">
+                        222
+                    </div>
+                </div>
+                <div class="carousel-nav-item cate-pope">
+                    <h4>
+                        <a href="">礼品</a> / <a href="">公仔</a> / <a href="">绿植</a>
+                        <span class="iconfont icon-you"></span>
+                    </h4>
+                    <div class="cate-open">
+                        333
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-wrapper">
+                <ul class="carousel-l-r">
+                    <li>
+                        <div class="left carousel-box"></div>
+                    </li>
+                    <li>
+                        <div class="right carousel-box"></div>
+                    </li>
+                </ul>
+
+                <div class="item active-img">
+                    <img src="../img/21_birthday_banner_pc.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="../img/21_valentine_banner_pc.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="../img/pc_home_eva_2.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="../img/20_longtou.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 大图轮播 end -->
+    <!-- 服务 str -->
+    <div class="main-server w">
+        <ul>
+            <li>
+                <span class="iconfont icon-guanjun main-server-icon"></span>
+                <h4><a href="">鲜花电商认证龙头企业</a></h4>
+            </li>
+            <li>
+                <span class="iconfont icon-hua main-server-icon"></span>
+                <h4><a href="">15年品牌</a></h4>
+            </li>
+            <li>
+                <span class="iconfont icon-shijian main-server-icon"></span>
+                <h4><a href="">3小时全国送花</a></h4>
+            </li>
+            <li>
+                <span class="iconfont icon-qian main-server-icon"></span>
+                <h4><a href="">200%退赔承诺</a></h4>
+            </li>
+            <li>
+                <span class="iconfont icon-xiangji main-server-icon"></span>
+                <h4><a href="">最近401560条评价</a></h4>
+            </li>
+        </ul>
+    </div>
+    <!-- 服务 end -->
+    <!-- 节日banner str -->
+    <div class="festival w">
+        <div class="festival-banner">
+            <a href="">
+                <img src="../img/21_valentine_mbanner_pc.png" alt="">
+            </a>
+        </div>
+        <div class="festival-list">
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="festival-list-l">
+                            <p>情人节畅销款</p>
+                            <p>初心不负</p>
+                            <p>￥375</p>
+                        </div>
+                        <div class="festival-list-r">
+                            <img src="../img/9012450.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="festival-list-l">
+                            <p>33支红玫瑰</p>
+                            <p>寓意"三生三世"</p>
+                            <p>￥496</p>
+                        </div>
+                        <div class="festival-list-r">
+                            <img src="../img/9012009.jpg" alt="">
+                        </div>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="festival-list-l">
+                            <p>人气断货王</p>
+                            <p>兰蔻196礼盒</p>
+                            <p>￥589</p>
+                        </div>
+                        <div class="festival-list-r">
+                            <img src="../img/1073307.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="festival-list-l">
+                            <p>网红爆款</p>
+                            <p>永生花小夜灯</p>
+                            <p>￥298</p>
+                        </div>
+                        <div class="festival-list-r">
+                            <img src="../img/1073264.jpg" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 节日banner end -->
+    <!-- 场景入口 str -->
+    <div class="scene w">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="../img/home_channel_lover.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../img/home_channel_elder.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="../img/home_channel_friend.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../img/home_channel_birthday.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <div class="scene-img1">
+                    <a href="">
+                        <img src="../img/home_channel_express.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../img/home_channel_business.png" alt="">
+                    </a>
+                </div>
+                <div class="scene-img3">
+                    <a href="">
+                        <img src="../img/home_channel_you_2.jpg" alt="">
+                    </a>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <div class="scene-bottom w">
+        <ul>
+            <li><a href=""><img src="../img/home_channel_rexiao.png" alt=""></a></li>
+            <li><a href=""><img src="../img/home_channel_tejia.png" alt=""></a></li>
+            <li><a href=""><img src="../img/home_channel_xinpin.png" alt=""></a></li>
+            <li><a href=""><img src="../img/home_channel_pinwei.png" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- 场景入口 end -->
+    <!-- 楼层 爱情鲜花 str -->
+    <div class="f-love">
+        <div class="w">
+
+            <div class="f-love-header">
+                <h3>
+                    <a href="">爱情鲜花</a>
+                    <span>送 · 让你怦然心动的人</span>
+                </h3>
+                <a href="" class="more ">更多爱情鲜花<span class="iconfont icon-you"></span></a>
+            </div>
+            <div class="f-love-main">
+                <div class="f-main-l">
+                    <a href="">
+                        <img src="../img/home_floor_lover.png" alt="">
+                    </a>
+                    <div class="link-cover">
+                        <a href="">
+                            爱情鲜花专区
+                            <span class="iconfont icon-you"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="f-main-r">
+                    <ul>
+
+                        <!-- <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f-pic">
+                                    <img src="../img/9010966.jpg_220x240.jpg" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>爱情 · 一往情深</p>
+                                    <p>￥248</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 楼层 爱情鲜花 end -->
+    <!-- 底部 str -->
+    <footer class="w">
+        <ul>
+            <li><a href="">首页</a></li>
+            <b>|</b>
+            <li><a href="">关于我们</a></li>
+            <b>|</b>
+            <li><a href="">媒体报道</a></li>
+            <b>|</b>
+            <li><a href="">联系方式</a></li>
+            <b>|</b>
+            <li><a href="">企业团购</a></li>
+            <b>|</b>
+            <li><a href="">花店入驻</a></li>
+            <b>|</b>
+            <li><a href="">友情链接</a></li>
+            <b>|</b>
+            <li><a href="">在线补款</a></li>
+            <b>|</b>
+            <li><a href="">为什么选择中国鲜花礼品网</a></li>
+        </ul>
+        <div class="auth">
+            <div class="auth-img">
+                <img src="../img/slogan.png" alt="">
+                <img src="../img/100.jpg" alt="">
+                <img src="../img/bico1.jpg" alt="">
+                <img src="../img/govIcon.gif" alt="">
+            </div>
+        </div>
+        <div class="button-text">
+            <p><a href="">中国花卉协会会员</a> <a href="">中国电子商务协会会员</a>
+                ICP经营许可证: <a href="">粤B2-20050744</a> | <a href="">粤ICP备09171662号</a> 粤公网安备44030502000373号Copyight
+                &copy;
+                2005-2021</p>
+            <p><a href="">www.hua.com</a> 深圳市百易信息技术有限公司</p>
+        </div>
+    </footer>
+    <!-- 底部 end -->
+</body>
+<script>
+    $(function () {
+        getGoods();
+        function getGoods() {
+            dataRequestAll().then(data => {
+                var { list } = data;
+                if (list.length > 0) {
+                    var html = "";
+                    list.forEach(({ goodsName, goodsPrice, goodsImg, goodsId }) => {
+                        html += `<li>
+                            <a href="./goodsDetail.html?gid=${goodsId}">
+                                <div class="f-pic">
+                                    <img src="${goodsImg}" alt="">
+                                </div>
+                                <div class="cont-pic">
+                                    <p>${goodsName}</p>
+                                    <p>￥${goodsPrice}</p>
+                                    <p>已售 13.1万 件</p>
+                                </div>
+                            </a>
+                        </li>`;
+                    });
+                    $(".f-main-r>ul").html(html);
+                } else {
+                    $(".f-main-r>ul").html("数据加载失败");
+                }
+            })
+        }
+    })
+
+
+
+
+
+    var lgc = getCookie("lgc");
+    if (lgc) {
+        $(".top-login a").removeAttr("href").text("你好，" + lgc).attr("href", "javascript:;");
+        $(".top-register a").removeAttr("href").text("退出").attr("href", " ");
+        sCarGoods(lgc);
+    }
+    // 退出
+    $(".top-register a").click(function () {
+        console.log(111);
+        $(".top-login a").removeAttr("href").text("你好，请登录").attr("href", "./login.html");
+        $(".top-register a").removeAttr("href").text("注册").attr("href", "./register.html");
+        delCookie("lgc");
+        window.reload();
+    })
+
+
+
+    var index = 0;
+    var timer;
+    autoPlay();
+    function autoPlay() {
+        // 自动播放
+        timer = setInterval(function () {
+            index++;
+            index = index >= 4 ? 0 : index;
+            $(".item").eq(index).addClass("active-img").siblings().removeClass("active-img");
+            $(".carousel-indicators li").eq(index).addClass("active").siblings().removeClass("active");
+        }, 3000)
+    }
+    // 委托点击事件
+    $(".carousel-indicators").on("click", "li", function () {
+
+        index = $(this).index();
+        // console.log($(this).index());
+        $(".item").eq(index).addClass("active-img").siblings().removeClass("active-img");
+        $(".carousel-indicators li").eq(index).addClass("active").siblings().removeClass("active");
+    })
+    // 移入移出效果
+    $(".control-wrapper").hover(function () {
+        clearInterval(timer);
+        $(".carousel-l-r li").css("display", "block")
+    }, function () {
+        autoPlay();
+        $(".carousel-l-r li").css("display", "none")
+    })
+    // 左点击
+    $(".left").click(function () {
+        index = $(".active-img").index();
+        index--;
+        index = index <= 0 ? 3 : index - 1;
+        $(".item").eq(index).addClass("active-img").siblings().removeClass("active-img");
+        $(".carousel-indicators li").eq(index).addClass("active").siblings().removeClass("active");
+    })
+    // 右点击
+    $(".right").click(function () {
+        index = $(".active-img").index();
+        index++;
+        index = index >= 5 ? 0 : index - 1;
+        $(".item").eq(index).addClass("active-img").siblings().removeClass("active-img");
+        $(".carousel-indicators li").eq(index).addClass("active").siblings().removeClass("active");
+    })
+
+    // 购物车数据
+    function sCarGoods(lgc) {
+        if (lgc) {
+            selectGoods({ user: lgc }).then(({ row }) => {
+                $(".carNum").text(row);
+            })
+        }
+    }
+</script>
+
+</html>
