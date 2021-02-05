@@ -186,19 +186,7 @@
     <!-- 底部 end -->
 </body>
 <script>
-    var lgc = getCookie("lgc");
-    if (lgc) {
-        $(".top-login a").removeAttr("href").text("你好，" + lgc).attr("href", "javascript:;");
-        $(".top-register a").removeAttr("href").text("退出").attr("href", "");
-    }
-    // 退出
-    $(".top-register a").click(function () {
-        console.log(111);
-        $(".top-login a").removeAttr("href").text("你好，请登录").attr("href", "./login.html");
-        $(".top-register a").removeAttr("href").text("注册").attr("href", "./register.html");
-        delCookie("lgc");
-        window.reload();
-    })
+
 
     // $(".login-phone input").val();
     $(".login-phone input").blur(function () {
@@ -214,6 +202,19 @@
                     setCookie("lgc", user);
                     location.href = "./index.html";
                     $(".tips").html(" ");
+                    // var lgc = getCookie("lgc");
+                    // if (lgc) {
+                    //     $(".top-login a").removeAttr("href").text("你好，" + lgc).attr("href", "javascript:;");
+                    //     $(".top-register a").removeAttr("href").text("退出").attr("href", "");
+                    // }
+                    // // 退出
+                    // $(".top-register a").click(function () {
+                    //     console.log(111);
+                    //     $(".top-login a").removeAttr("href").text("你好，请登录").attr("href", "./login.html");
+                    //     $(".top-register a").removeAttr("href").text("注册").attr("href", "./register.html");
+                    //     delCookie("lgc");
+                    //     window.reload();
+                    // })
                 } else {
                     $(".tips").html(msg).css("color", "red");
                 }

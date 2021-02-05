@@ -1,7 +1,7 @@
 <?php
 @include_once("conn.php");
 $user = $_POST["user"];
-$search = "select user,goodsId,goodsNum from `shopping-car` where user ='calabashbaby'";
+$search = "select user,goodsId,goodsNum from `shopping-car` where user ='$user'";
 $result = mysqli_query($conn,$search);
 // echo $result->num_rows;
 // $item = mysqli_fetch_assoc($item);

@@ -195,20 +195,20 @@
 </body>
 <script>
 
-    // cookie
-    var lgc = getCookie("lgc");
-    if (lgc) {
-        $(".top-login a").removeAttr("href").text("你好，" + lgc).attr("href", "javascript:;");
-        $(".top-register a").removeAttr("href").text("退出");
-    }
-    // 退出
-    $(".top-register").click(function () {
-        console.log(111);
-        $(".top-login a").removeAttr("href").text("你好，请登录").attr("href", "./login.html");
-        $(".top-register a").removeAttr("href").text("注册").attr("href", "./register.html");
-        delCookie("lgc");
-        window.reload();
-    })
+    // // cookie
+    // var lgc = getCookie("lgc");
+    // if (lgc) {
+    //     $(".top-login a").removeAttr("href").text("你好，" + lgc).attr("href", "javascript:;");
+    //     $(".top-register a").removeAttr("href").text("退出");
+    // }
+    // // 退出
+    // $(".top-register").click(function () {
+    //     console.log(111);
+    //     $(".top-login a").removeAttr("href").text("你好，请登录").attr("href", "./login.html");
+    //     $(".top-register a").removeAttr("href").text("注册").attr("href", "./register.html");
+    //     delCookie("lgc");
+    //     window.reload();
+    // })
 
 
     $(".login-user input").blur(function () {
@@ -233,7 +233,7 @@
         var flag = flag1 + flag2 + flag3 + flag4;
         if (flag == 4) {
             var lgc = setCookie("lgc", user);
-            login({ user, phone, pwd, email }).then(({ msg, status }) => {
+            register({ user, phone, pwd, email }).then(({ msg, status }) => {
                 if (status) {
                     location.href = "../html/login.html";
                 } else {
